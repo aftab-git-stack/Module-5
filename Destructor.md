@@ -21,9 +21,25 @@ The program defines a class `Demo` with:
    - Create an instance of the `Demo` class.
    - Delete the object using the `del` keyword.
 ## Program
-Add code Here
+```
+class Demo:
+    def __init__(self):
+        self.status = "Alive"
+        print(self.status)
 
+    def __del__(self):
+        print("Object is being destroyed")
+
+obj = Demo()
+del obj
+```
 ## 🧪 Output
+```
+Alive
+Object is being destroyed
+```
 
 ## Result
-
+```
+The program was executed successfully and demonstrated the working of a constructor and destructor in Python.
+```
